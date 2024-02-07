@@ -1,0 +1,43 @@
+footer.flex {
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+footer.flex ul {
+    gap: 1rem;
+}
+
+footer.flex ul a {
+    color: var(--subtitle);
+    transition: 0.3s;
+    
+    font-weight: 700;
+}
+
+footer.flex ul a:hover {
+    color: var(--mycolor);
+}
+
+footer.flex .copy-right p {
+color: var(--subtitle);
+margin-bottom: .5rem;
+
+}
+footer.flex .copy-right .developed {
+color: var(--subtitle);
+}
+footer.flex .copy-right .developed span {
+    color: var(--mycolor);
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+ footer.flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+ }
+ footer.flex .copy-right {
+   text-align: center;
+}
+}

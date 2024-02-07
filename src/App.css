@@ -1,0 +1,42 @@
+.holder {
+    background-color: var(--secondary);
+    padding: 25px 25px;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+ 
+}
+
+.icon-arrow-up {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #888;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+    outline: none;
+    padding: 8px 12px;
+    transition: .4s;
+}
+
+.icon-arrow-up:hover {
+        border: 1px solid var(--mycolor);
+    }
+
+    .cursor {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #E78895;
+        z-index: 1000;
+        pointer-events: none;
+        border: 1px solid var(--bgheader);
+    }

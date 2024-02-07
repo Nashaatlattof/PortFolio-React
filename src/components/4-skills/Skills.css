@@ -1,0 +1,37 @@
+#skills-section {
+  padding: 150px 0;
+}
+
+
+
+#skills-section .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+#skills-section .icons-container .icon {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px var(--mycolor);
+    width: 165px;
+    height: 165px;
+    
+    position: relative;
+    transition: .5s;
+    color: var(--border);
+    fill: var(--border);
+}
+
+#skills-section .icons-container .icon:hover{
+  color: var(--mycolor);
+  fill: var(--mycolor);
+}
+

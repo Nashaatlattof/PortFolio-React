@@ -1,0 +1,88 @@
+
+
+.about-us {
+    margin: 3rem 0;
+ 
+}
+.about-us .subtitle {
+    margin-bottom: 3rem;
+    color: var(--subtitle);
+}
+.about-us a {
+    color: var(--mycolor);
+    text-decoration: solid; 
+    cursor: pointer;
+}
+.about-us .social-data {
+       display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+
+
+.about-us .social-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.about-us .social-bar span.data-value {
+    color: var(--subtitle);
+}
+.about-us .social-bar .data-key {
+   color: var(--subtitle);
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 40%;
+    text-decoration: dotted;
+}
+.about-us .social-bar .data-key {
+ 
+}
+
+.about-us .cv {
+    
+}
+.about-us .cv .wrap-download {
+align-items: center;
+    border: 1px solid var(--border)/* hsla(0,0%,100%,.2) */;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8rem;
+    position: relative;
+    transition: .4s;
+    width: px;
+    height: 200px;
+}
+.about-us .cv .wrap-download:hover {
+border: 2px solid var(--mycolor);
+
+
+}
+.about-us .cv .wrap-download:hover .down-box {
+width: 140px;
+filter: invert(99%) sepia(90%) saturate(246%) hue-rotate(240deg) brightness(150%) contrast(43%)
+}
+
+.about-us .cv .down-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+max-width: 100%;
+width: 150px;
+
+ filter: invert(99%) sepia(10%) saturate(446%) hue-rotate(240deg) brightness(110%) contrast(73%);
+ }
+
+
+

@@ -1,0 +1,111 @@
+
+section.services {
+    padding: 5rem 0;
+}
+.services .subtitle {
+margin-bottom: 3rem;
+color: var(--subtitle);
+}
+section.services h1.title::after {
+content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    transform: translateY(-2px);
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+    background: var(--afterbackground);
+}
+section.services h1.title::before{
+content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--mycolor);
+}
+
+
+.services .all-services {
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+}
+.services .all-services .info-box {
+background-color: rgba(63, 63, 70, 0.15);
+
+   border: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding: 42px 40px 43px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.services .all-services .info-box::after {
+    background-color: var(--mycolor);
+    content: "";
+    height: 20%;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 3px;
+}
+
+.services  .info-box-data {
+border-right: 1px solid hsla(0,0%,100%,.05);
+    flex-basis: 75%;
+    padding: 40px 50px 40px 40px;
+}
+.services  .info-box-data .title-serv {
+    color: var(--title);
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+.services  .info-box-data p.sub-title {
+color: var(--subtitle);
+line-height: 1.7;
+}
+.services .info-box-price {
+align-items: center;
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.services .info-box-price > p {
+color: var(--subtitle);
+margin-bottom: 1rem;
+
+}
+
+.services .info-box-price > span {
+    color: var(--mycolor);
+    font-size: 30px;
+} 
+
+@media (max-width: 990px) {
+.services .all-services .info-box {
+    flex-direction: column;
+   
+}
+.services  .info-box-data {
+border-bottom: 1px solid hsla(0,0%,100%,.05);
+text-align: center;
+}
+
+
+}

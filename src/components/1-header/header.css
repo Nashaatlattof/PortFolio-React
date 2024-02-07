@@ -1,0 +1,149 @@
+
+/* ==========
+Table Of Contents 
+================
+1. Header Design 
+2. Modal && Pop up
+3. IconButton
+4. Media Query
+*/
+header {
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 1.4rem;
+  margin: 2rem auto;
+   background-color: var(--bgheader);
+  padding: 1rem;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+position: fixed;
+z-index: 99;
+left: 0;
+}
+
+header nav {
+
+  padding: 0.66rem 1.2rem;
+ 
+}
+
+header nav ul li a {
+  color: var(--title);
+  font-size: 1rem;
+  font-weight: 900;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  
+  font-size: 0.9rem;
+  color: var(--mycolor);
+}
+header nav ul li a:active {
+  
+  font-size: 0.9rem;
+  color: var(--mycolor);
+}
+
+
+/* Modal && Popup */
+
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+header .fixed ul.modal {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  animation: menu 1s;
+  
+}
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding-top: 0.5rem;
+  padding-bottom: 0.77rem;
+}
+header .fixed ul.modal li:first-child {
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  text-align: right;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+header .fixed ul.modal li a {
+  font-size: 1rem;
+  color: var(--title)
+}
+
+header .menu {
+  display: none;
+}
+
+/* IconButton */
+header .btn-mode , header .icon-menu {
+    background-color: var(--bgHeader);
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(250, 128, 114, 0.184);
+    color: var(--subtitle);
+    transition: 0.2s;
+}
+header .btn-mode:hover , header .icon-menu:hover {
+    color:var(--title);
+    border: 1px solid rgba(250, 128, 114, 0.822);
+ }
+
+ header .icon-close {
+    font-size: 2rem;
+    color: rgba(250, 128, 114, 0.822);
+    transition: 0.3s;
+ }
+ 
+ header .icon-close:hover {
+    rotate: 180deg;
+ }
+
+button {
+  all: unset;
+}
+
+/*Start  Css Media Query*/
+@media (max-width: 760px) {
+  header nav {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+}
+header nav ul {
+  gap: 16px;
+  padding: 0;
+}
+/*End  Css Media Query*/
+/* Start Animation */
+@keyframes menu {
+  0% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* End Animation */
