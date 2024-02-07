@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSprings, animated } from "react-spring";
+import { useSprings, animated } from "@react-spring/web";
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase, FaBootstrap, FaJs } from "react-icons/fa";
 import "./Skills.css";
 import SvgPages from "../../assets/SVG/SvgPages";
